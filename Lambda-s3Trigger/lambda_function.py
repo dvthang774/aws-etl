@@ -61,8 +61,8 @@ enable_delta = 'ALTER TABLE delta.`{}` SET TBLPROPERTIES (delta.enableChangeData
     final_scripts = scripts.encode("utf-8")
     
     s3 = boto3.resource(service_name = 's3',region_name = 'us-east-1',
-                            aws_access_key_id = 'AKIAQZQU4DT5BECEQYVF',
-                            aws_secret_access_key ='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')
+                            aws_access_key_id = '',
+                            aws_secret_access_key ='')
     
     tmp_bucket = "log-tmp-bucket"
     tmp_python_folder = "tmp/python/"
